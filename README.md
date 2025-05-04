@@ -52,3 +52,60 @@ elderly_biometrics/
 ├── train_voice_model.py   # Training script for voice model
 ├── requirements.txt       # Python dependencies
 └── README.md              # Documentation
+
+
+🎤 How It Works?
+1️⃣ Enrollment (New User)
+The user enters their name and clicks "Enroll".
+
+The system captures their face using a webcam.
+
+The system records a voice sample using the microphone.
+
+The extracted biometric features are stored for future authentication.
+
+2️⃣ Authentication (Returning User)
+The user enters their name and clicks "Authenticate".
+
+The system captures a live face image and voice sample.
+
+The face and voice data are compared with the stored biometric template.
+
+The system computes a similarity score and decides:
+
+✅ Access Granted (if score is above threshold)
+
+❌ Access Denied (if score is below threshold)
+
+📊 Evaluation Metrics
+The authentication system is optimized for elderly users, considering biometric changes over time. We use the following evaluation metrics:
+
+False Acceptance Rate (FAR) – Incorrectly granting access.
+
+False Rejection Rate (FRR) – Incorrectly denying access.
+
+Equal Error Rate (EER) – Trade-off between FAR and FRR.
+
+Confidence Thresholding – Adaptive for different users.
+
+🔐 Privacy & Security Considerations
+🔹 Data Encryption – Biometric data is securely stored.
+🔹 GDPR Compliance – Ensures user consent before data collection.
+🔹 On-Device Processing – Can be extended for offline use.
+
+🚀 Future Enhancements
+🔹 Improved Voice Aging Adaptation – Fine-tune LSTM models for voice changes.
+🔹 Iris Recognition Support – Additional biometric layer for security.
+🔹 Mobile App Integration – Deploy as a mobile authentication system.
+🔹 Federated Learning – Decentralized training to improve accuracy.
+
+👥 Contributors
+[Your Name] - Developer & Researcher
+
+[Contributor Name] - AI & ML Engineer
+
+[Contributor Name] - UI/UX & Streamlit Developer
+
+🔹 Feel free to contribute to this project by submitting pull requests!
+
+

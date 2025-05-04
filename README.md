@@ -88,24 +88,21 @@ Equal Error Rate (EER) – Trade-off between FAR and FRR.
 
 Confidence Thresholding – Adaptive for different users.
 
-🔐 Privacy & Security Considerations
-🔹 Data Encryption – Biometric data is securely stored.
-🔹 GDPR Compliance – Ensures user consent before data collection.
-🔹 On-Device Processing – Can be extended for offline use.
+🚀 How to Run This Project
+📦 Install Required Libraries
 
-🚀 Future Enhancements
-🔹 Improved Voice Aging Adaptation – Fine-tune LSTM models for voice changes.
-🔹 Iris Recognition Support – Additional biometric layer for security.
-🔹 Mobile App Integration – Deploy as a mobile authentication system.
-🔹 Federated Learning – Decentralized training to improve accuracy.
+Make sure you have Python 3.7+ installed. Then install dependencies:pip install streamlit keras tensorflow opencv-python-headless numpy librosa soundfile sounddevice scikit-learn keras-vggface
 
-👥 Contributors
-[Your Name] - Developer & Researcher
+Folder Structure (Create These If Missing)
+project_root/
+├── elderly_biometrics_app.py       # Main Streamlit app
+├── models/                         # Trained voice model will be saved here
+├── data/
+│   ├── face/                       # Stores enrolled face images
+│   └── voice/                      # Stores enrolled voice feature .npy files
 
-[Contributor Name] - AI & ML Engineer
+▶️ Run the Streamlit App  : streamlit run elderly_biometrics_app.py
 
-[Contributor Name] - UI/UX & Streamlit Developer
 
-🔹 Feel free to contribute to this project by submitting pull requests!
 
 
